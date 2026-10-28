@@ -1,9 +1,9 @@
-@import url("reset.css");
-@import url("variables.css");
-@import url("typography.css");
-@import url("global.css");
-@import url("utilities.css");
+/* main.css */
+@layer reset, base, components, utilities;
 
-/*
-Your custom code here
-*/
+@import url("reset.css")      layer(reset);
+@import url("variables.css")  layer(base);
+@import url("typography.css") layer(base);
+@import url("global.css")     layer(base);
+/*@import url("components.css")       layer(components);*/
+@import url("utilities.css")  layer(utilities);
